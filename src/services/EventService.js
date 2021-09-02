@@ -17,7 +17,10 @@ export default {
   getEvent(id) {
     return apiClient.get('/events/' + id)
   },
-  saveEvent (event) {
+  saveEvent(event) {
     return apiClient.post('/events', event)
+  },
+  saveOrganizer(org) {
+    return apiClient.post('/organizers', org)
   }
 }
